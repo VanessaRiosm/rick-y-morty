@@ -1,0 +1,14 @@
+.principal{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+    gap: 20px;
+    margin-left: 20px;
+    padding: 10px;
+    justify-content: center;
+}
+
+.img{
+    width: 490px;
+    display:block;
+    margin: auto;
+}

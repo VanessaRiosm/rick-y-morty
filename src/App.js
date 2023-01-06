@@ -1,25 +1,48 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useEffect} from 'react';
+import Cards from './Components/Cards';
+import Nav from './Components/Nav'
+import Species from './Components/Filters/Species.jsx';
+import { Route, Routes } from 'react-router-dom';
+import CardDetail from './Components/CardDetail';
+import { connect } from 'react-redux';
+import {getCharacters} from './Redux/action'
+import Favorites from './Components/Favorites';
 
-function App() {
+
+function App({getCharacters}) {
+
+
+ useEffect(() => {
+  getCharacters()
+
+}, []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
 
-export default App;
+      <Routes>
+
+        <Route path={"/"} element={
+          <div>
+            <Nav />
+            <Species />
+            <Cards /> 
+
+        </div>
+        }/>
+        <Route path="/character/:id" element ={<CardDetail />}/>
+        <Route path="/favorites" element ={<Favorites />}/>
+      </Routes>
+       
+  </div>
+  )};
+
+  
+  function mapDispatchToProps(dispatch){
+    return{
+      getCharacters: () => dispatch(getCharacters())
+    }
+  }
+
+
+export default connect(null, mapDispatchToProps)(App)

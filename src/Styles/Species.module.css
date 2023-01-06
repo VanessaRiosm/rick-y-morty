@@ -1,0 +1,41 @@
+.btn{
+    color: black;
+    align-content: center;
+}
+
+.favoritesDiv{
+    text-align: center;
+}
+
+.favoritesText{
+    /* text-decoration: none; */
+    text-decoration: dotted;  
+    color: rgb(0, 0, 0);    
+}
+
+.favoritesBtn{
+    
+    background-color: rgba(166, 239, 183, 0.535);
+    border-radius: 20px;
+    width: 150px;
+    height: 35px;
+    margin: 10px;
+}
+
+.filters{
+    display: flex;
+    justify-content: center; 
+    padding: 15px;
+    
+}
+
+
+.filterBtn{
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+    border: 1px solid rgb(255, 255, 255);
+    border-color: rgb(0, 116, 0);
+    width: 120px;
+    height: 40px;
+    margin: 10px;
+}

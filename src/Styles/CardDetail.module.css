@@ -1,0 +1,48 @@
+.img{
+    border-radius: 150%;
+    flex-direction: column;
+    position: relative;
+    display:block;
+    margin-left: 38%;
+    margin-top: -5%;
+    width: 340px;
+    height: 340px;
+}
+
+.title{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-left: 0;
+    margin-bottom: 5%;
+    margin-top: 1%;
+    
+}
+
+.info{
+    border: 1px;
+    display: inline-block;
+    width: 30%;
+    margin-top: 25%;
+    margin-left: 40%;
+    padding: 20px, 20px;
+    text-align: justify;
+}
+
+.btn{
+    color: rgb(0, 0, 0);
+    background-color: rgba(182, 181, 181, 0.843);
+    width: 80px;
+    height: 40px;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+.btn:hover{
+    background-color: rgb(182, 181, 181);
+}
+
+.principal{
+    background-image: url('https://w0.peakpx.com/wallpaper/500/320/HD-wallpaper-rick-and-morty.jpg'); 
+    height: 220px;
+   
+   
+   }

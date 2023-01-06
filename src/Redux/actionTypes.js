@@ -1,0 +1,8 @@
+export const GET_CHARACTERS = "GET_CHARACTERS"
+export const GET_CHAR = "GET_CHAR"
+export const ADD_CHAR = "ADD_CHAR"
+export const DELETE_CHAR = "DELETE_CHAR"
+export const FILTER = "FILTER"
+export const MY_FAVORITES = "MY_FAVORITES"
+export const REMOVE_FAVORITE = "REMOVE_FAVORITE"
+export const NUM_PAG = "NUM_PAG"
