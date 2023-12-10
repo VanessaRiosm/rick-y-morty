@@ -1,92 +1,77 @@
-.divPrincipal{
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    width: 200px;
-    align-content: center;
-    border: 1px solid rgba(255, 255, 255, 0.375);
-    border-radius: 15px;
-    border-color: rgba(20, 119, 4, 0.516);
-    height: 260px;
-    background-color: rgba(246, 246, 246, 0.749);
-    margin-top: 10px;
-    /* background-image: url('https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/rick-and-morty-falling-portal-to-portal-carter-briar.jpg'); */
-    box-shadow: 0 0 20px rgba(88, 88, 88, 0.64);
+.divPrincipal {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 200px;
+  align-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.623);
+  border-radius: 15px;
+  border-color: rgba(20, 119, 4, 0.516);
+  background-color: black;
+  height: 260px;
+  margin-top: 10px;
+  box-shadow: 0 0 20px rgba(88, 88, 88, 0.64);
 }
 
-.divPrincipal:hover{
-    background-color: rgba(0, 107, 4, 0.088);
-    
+.divPrincipal:hover {
+  background-color: rgba(20, 119, 4, 0.516);
 }
-.img{
-    border-radius: 100px;
-    margin-top: -30px;
-    max-height: 178px;
-}
-
-.img:hover{
-    color:rgba(0, 0, 0, 0.219)
+.img {
+  border-radius: 100px;
+  margin-top: -30px;
+  max-height: 178px;
 }
 
-.texto{
-    position: absolute;
-    color: white;
-    bottom: 75px;
-    left: 5px;
-    background-color: rgba(63, 64, 63, 0.777);
-}
- 
- .btn{
-     color:white;
-     width: 25px;
-     border-radius: 4px;
-     margin: 5px;
-     place-self: flex-end;
-
- }
-
- .divBoton{
-    display: flex;
-    justify-content: right;
- }
- 
- .btn:hover{
-     
-     color:rgb(241, 2, 2);
-
- }
-
- .divNombre{
-    background-color: rgba(57, 109, 40, 0.902);
-    color: rgb(255, 255, 255);
-    text-align: left;
-    height: 80px;
-    width: 100%;
-    border-radius: 15px;
-    margin-left: -2px;
-    margin-top: 1px;
-    
- }
-
- .link{
-    text-decoration: none;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    width: 200px;
-    height: 290px;
-    align-items: center;
- }
-
-.lista{
-    list-style: none;
+.texto {
+  position: absolute;
+  color: white;
+  bottom: 75px;
+  left: 5px;
+  background-color: rgba(63, 64, 63, 0.777);
 }
 
-.pDeLista{
-    margin: -10px;
-    
+.btn {
+  color: white;
+  width: 25px;
+  border-radius: 4px;
+  margin: 5px;
+  place-self: flex-end;
 }
 
-.li{
-    margin-top: 7px;
+.divBoton {
+  display: flex;
+  justify-content: right;
+}
+
+.divNombre {
+  background-color: rgba(57, 116, 38, 0.902);
+  color: rgb(255, 255, 255);
+  text-align: left;
+  height: 80px;
+  width: 100%;
+  border-radius: 15px;
+  margin-left: -2px;
+  margin-top: 1px;
+}
+
+.link {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 200px;
+  height: 290px;
+  align-items: center;
+}
+
+.lista {
+  list-style: none;
+}
+
+.pDeLista {
+  margin: -10px;
+}
+
+.li {
+  margin-top: 7px;
 }
