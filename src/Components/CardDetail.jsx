@@ -17,23 +17,38 @@ function CardDetail({char, getChar}) {
   }, [id])
 
   return (
-    <div>
-      <div className={style.principal}>
-        <div>
-          <button onClick={() => backToHome()} className={style.btn}>
-            BACK
-          </button>
-        </div>
-        <img
-          src={char.image}
-          className={style.img}
-          alt='imagen del personaje'
-        />
-        <h1 className={style.title}>{char.name}</h1>
+    <div className={style.principal}>
+      <div>
+        <button onClick={() => backToHome()} className={style.btn}>
+          BACK
+        </button>
       </div>
 
-      <div className={style.info}>
-        {char.species} {char.status} {char.gender}
+      <div style={{display: 'flex', justifyContent: 'center'}}>
+        <div
+          style={{
+            border: '1px solid green',
+            borderRadius: '20px',
+            marginTop: '100px',
+            position: 'relative',
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            alignContent: 'center',
+            width: '50%',
+          }}
+        >
+          <img
+            src={char.image}
+            className={style.img}
+            alt='imagen del personaje'
+          />
+
+          <div style={{backgroundColor: 'transparent', marginTop: '250px'}}>
+            <p className={style.title}>{char.name}</p>
+            {char.species} {char.status} {char.gender}
+          </div>
+        </div>
       </div>
     </div>
   )
