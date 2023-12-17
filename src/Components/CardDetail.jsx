@@ -25,28 +25,18 @@ function CardDetail({char, getChar}) {
       </div>
 
       <div style={{display: 'flex', justifyContent: 'center'}}>
-        <div
-          style={{
-            border: '1px solid green',
-            borderRadius: '20px',
-            marginTop: '100px',
-            position: 'relative',
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            alignContent: 'center',
-            width: '50%',
-          }}
-        >
+        <div className={style.details}>
           <img
             src={char.image}
             className={style.img}
             alt='imagen del personaje'
           />
 
-          <div style={{backgroundColor: 'transparent', marginTop: '250px'}}>
+          <div style={{backgroundColor: 'transparent', marginTop: '210px'}}>
             <p className={style.title}>{char.name}</p>
-            {char.species} {char.status} {char.gender}
+            <p> Specie: {char.species}</p>
+            <p> Status: {char.status}</p>
+            <p>Gender: {char.gender}</p>
           </div>
         </div>
       </div>

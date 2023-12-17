@@ -45,12 +45,12 @@ function Card(props) {
         />
         <h4 className={style.texto}>{props.name}</h4>
         <div className={style.divNombre}>
-          <p className={style.pDeLista}>
+          <div className={style.pDeLista}>
             <ul className={style.lista}>
               <li className={style.li}>{props.gender}</li>
               <li className={style.li}>{props.origin}</li>
             </ul>
-          </p>
+          </div>
         </div>
       </Link>
     </div>
